@@ -1,0 +1,37 @@
+//
+// fide@void
+//
+
+
+{
+    "layer": "top", 
+    "position": "bottom", 
+    "height": 25, 
+    "spacing": 8, 
+
+    // Modules 
+    "modules-left": ["custom/command", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["custom/pacman", "custom/crypto"],
+
+"custom/pacman": {
+    "format": "PACMAN [{}]",
+    "interval": 7200,                     
+    "exec": "checkupdates | wc -l",       
+    "exec-if": "exit 0",
+    "on-click": "footclient --override=colors.background=000000 --title=fly-foot",                  
+    "signal": 8,
+    "tooltip": false,
+},
+
+"custom/command": {
+    "format": " ",
+    "on-click": "rofi -show drun",
+    "tooltip": false
+    },
+
+"hyprland/window": {
+    "format": "{}"
+}
+}
+

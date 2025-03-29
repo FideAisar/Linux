@@ -1,0 +1,76 @@
+//
+// fide@void
+//
+
+
+{
+    "layer": "top", 
+    "height": 25, 
+    "spacing": 4, 
+
+
+    // Modules 
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "temperature", "backlight", "pulseaudio", "battery", "network"],
+	
+	"wlr/workspaces": {
+  		"format": "{name}",
+  		"on-click": "activate",
+	},
+	"hyprland/window": {
+    	"format": "{}"
+	},
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+        "format-alt": "[{:%Y-%m-%d}]",
+        "format": "[{:%A %d, %H:%M}]",
+		"tooltip": false
+    },
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "RAM {}%"
+    },
+    "temperature": {
+    	"critical-threshold": 80,
+        "format": "TEMP {temperatureC}°C",
+        "tooltip": false,
+    },
+    "backlight": {
+        "format": "SCREEN {percent}%",
+        "tooltip": false,
+		
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 15,
+            "critical": 7
+        },
+        "format": "BAT {capacity}%",
+        "format-charging": "BAT +{capacity}%",
+    },
+	"network": {
+    	"format": "WIFI {signalStrength}%",
+    	"format-disconnected": "WIFI {signalStrength}",
+		"format-ethernet": "ETH",
+    	"max-length": 50,
+		"on-click": "$HOME/scripts/rofi_wifi.sh",
+		"tooltip": true,
+		"tooltip-format": "{essid}"
+	},
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-bluetooth": "VOL {volume}%",
+        "format-bluetooth-muted": "VOL 0%",
+        "format-muted": "VOL 0%",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    }
+}
+

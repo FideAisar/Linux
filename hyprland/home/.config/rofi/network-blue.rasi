@@ -1,0 +1,59 @@
+/*
+** fide@void
+*/
+
+
+* {
+    background-color:  	#0000ff;
+    text-color:        	#fff;
+    font:            	"Terminus 9";
+}
+
+window {
+    anchor:     		north;
+    location:  	 		north east;
+    width:      		230px;
+    height: 			200px;
+    padding:    		8px;
+    y-offset: 			25px;
+    x-offset: 			-10px;
+	border:				1px;
+    border-color: 		#ffffff;
+
+}
+
+horibox {
+    orientation: 		vertical;
+}
+
+listview {
+    layout:     		vertical;
+    spacing:    		5px;
+    lines:      		15;
+}
+
+entry {
+    expand:     		false;
+    width:      		100%;
+    margin:				0 0 0 10px;
+    color:				white;
+}
+
+element {
+    padding:			0px;
+}
+
+element selected {
+    background-color: 	#ff00ff;
+	text-color: 		white;
+}
+
+element-text, element-icon {
+  	background-color: 	inherit;
+  	text-color: 		inherit;
+  	highlight: 			bold #ffffff;
+}
+
+#prompt {
+  	enabled: 			true;
+}
