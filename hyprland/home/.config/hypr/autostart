@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
 # waybar
-$HOME/scripts/waybar_top.sh &
-$HOME/scripts/waybar_bottom.sh &
+$HOME/Scripts/waybar_top.sh &
+$HOME/Scripts/waybar_bottom.sh &
 
 # terminal, mako and bg
 foot --server &

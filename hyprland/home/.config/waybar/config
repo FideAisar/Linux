@@ -60,7 +60,7 @@
     	"format-disconnected": "WIFI {signalStrength}",
 		"format-ethernet": "ETH",
     	"max-length": 50,
-		"on-click": "$HOME/scripts/rofi_wifi.sh",
+		"on-click": "$HOME/Scripts/rofi_wifi.sh",
 		"tooltip": true,
 		"tooltip-format": "{essid}"
 	},
