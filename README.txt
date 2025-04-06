@@ -61,7 +61,7 @@ openssh                                             \
 feh                                                 \
 terminus-font 
                                                 
-												*AUR*
+                                                *AUR*
 tamsyn-font
 
 
