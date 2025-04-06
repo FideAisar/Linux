@@ -6,7 +6,7 @@
 =====================================================
 1. System                                         ***
 
-Terminal:		Foot
+Terminal:       Foot
 File manager:   Ranger 
 Text editor:    Neovim 
 Browser:        Chromium
@@ -23,18 +23,18 @@ Player:         Mpv
 =====================================================
 2. Style                                          ***               
 
-Font           (family - size) 
-------------------------------
+Font:           family      size 
+-----------------------------------
 System:         Terminus    9
 Terminal:       Tamsyn      13
 
-Colors      (primary - dimmed)
-------------------------------
-primary     #0000ff     
-secondary   #0000cc     
-accent      #ff00ff     
-red         #f53c3c    #ff8080
-green       #26a65b
+Colors:         primary     dimmed
+-----------------------------------
+primary     	#0000ff     
+secondary       #0000cc     
+accent          #ff00ff     
+red             #f53c3c     #ff8080
+green           #26a65b
 yellow      
 
 
@@ -58,13 +58,11 @@ tar                                                 \
 unzip                                               \
 git                                                 \
 openssh                                             \
-feh
-
-                                                *AUR*
-terminus-font                                       \
-tamsyn-font [AUR]
-
-
+feh                                                 \
+terminus-font 
+                                                
+												*AUR*
+tamsyn-font
 
 
 =====================================================
